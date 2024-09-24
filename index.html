@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas de recomendación</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/icono.ico">
+</head>
+
+<body>
+
+    <div class="escritorio">
+        <img class="start-bar" src="./img/start-bar.png">
+        <div class="iconos">
+            <img src="/img/icono-uno.png">
+
+            <button class="botones-carpetas" onclick="MostrarPrimeraInfo()">
+                <span id="texto-iconos"> Introduccón</span>
+            </button>
+
+            <img src="/img/icono-dos.png">
+
+            <button class="botones-carpetas" onclick="pasarsegundaCarpeta()">
+                <span id="texto-iconos">¿Cómo Funcionan?</span>
+            </button>
+
+            <img src="/img/icono-tres.png">
+
+            <button class="botones-carpetas" onclick="pasarNoticiaTres()">
+                <span id="texto-iconos">¿Qué apps <br> la utilizan?</span>
+            </button>
+
+            <img src="/img/icono-cuatro.png">
+
+            <button class="botones-carpetas" onclick="pasarNoticiaCuatro()">
+                <span id="texto-iconos">¿Qué ventajas ofrece?</span>
+            </button>
+        </div>
+
+        <!--PRIMER ETAPA-->
+        <div class="carpeta-uno" id="carpeta-uno">
+            <button onclick="OcultarPrimerInfo()" id="boton-cerrar-carpeta-uno">
+            </button>
+            <div class="contenido-uno" id="contenido-uno"> <!--contenido-uno-->
+                <div>
+                    <h1>Uso de las inteligencias artificiales <br> para personalizar la experiencia del usuario</h1>
+                </div>
+
+                <div>
+                    <img src="./img/noti-uno.png">
+                </div>
+
+                <div class="primer-texto">
+
+                    <div id="texto-noticia">
+                        La IA utiliza algoritmos de recomendación llamados<div id="bold">sistemas de recomendación</div>
+                    </div>
+
+                    <a onclick="MostrarContenidoDos()" href="javascript:void(0);" type="buttom">
+                        <img id="boton-uno" src="./img/icono-noticia-uno.png">
+                    </a>
+                </div>
+
+                <div class="mensaje-mono">
+                    <img id="mensaje-uno" src="./img/mensaje-mono.png" ">
+                    <div class=" mono">
+                    <img id="mono" src="./img/mono.gif">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="display-none" id="contenido-dos">
+            <div class="tarjetas-dos">
+
+                <img id="contenido-dos-titulo" src="./img/contenido-dos-titulo.png">
+                <div class="tarjetas-intermedias-contenido-dos">
+                    <img id="contenido-dos-uno" src="./img/contenido-dos-uno.png" ">
+                        <img id=" contenido-dos-dos" src="./img/contenido-dos-dos.png">
+                    <img id="contenido-dos-tres" src="./img/contenido-dos-tres.png">
+                </div>
+
+                <div class="textos-contenido-dos">
+                    <p id="texto-contenido-dos-titulo">¿Cómo funcionan <br> los sistemas de recomendación?</p>
+                    <div class="textos-intermedios-cont-dos">
+                        <p id="texto-dos-uno">Interactúas con las pagina , el software analiza <br> tus gustos para
+                            el futuro.</p>
+                        <p id="texto-dos-dos">Te sugiere opciones de interés <br> para simplificar tu navegamiento.
+                        </p>
+                        <p id="texto-dos-tres">Te crea un perfil personalizado, para <br> futuras recomendaciones.
+                        </p>
+                    </div>
+                </div>
+                <button class="boton-siguiente" onclick="OcultarContenidoDos()">
+                    <img src="./img/boton.png">
+                </button>
+                <img id="contenido-dos-siguiente" src="./img/contenido-dos-siguiente.png">
+
+                <div class="animaciones-cont-dos">
+                    <div class="animacion-uno">
+                        <img src="./img/animacion-uno.png">
+                        <img id="animacion-uno-complemento" src="./img/animacion-uno-complemento.png">
+                    </div>
+
+                    <div class="animacion-dos">
+                        <img src="./img/animacion-dos.png">
+                        <img id="animacion-dos-hover" src="./img/animacion-dos-complemento.png">
+                    </div>
+
+                    <div class="animacion-tres">
+                        <img src="./img/animacion-tres.png">
+                        <img id="animacion-tres-hover" src="./img/animacion-tres-complemento.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="display-none" id="contenido-tres"> <!--display-none-->
+            <div class="fondos">
+                <div class="contenedor-uno" id="contenedor-uno">
+                    <div class="contenidos-uno">
+                        <div class="texto-contenido-tres">
+                            <p>Estan en todas partes de la web:</p>
+                        </div>
+
+                        <div class="iconos-cont-tres">
+                            <img src="./img/iconos-tres/1.png">
+                            <img src="./img/iconos-tres/2.png">
+                            <img src="./img/iconos-tres/3.png">
+                            <img src="./img/iconos-tres/4.png">
+                        </div>
+
+                        <div class="texto-iconos-cont-tres">
+                            <p>Se utilizan en tiendas.</p>
+                            <p>En línea.</p>
+                            <p>En servicios de musica. </p>
+                            <p>En servicios de video.</p>
+                        </div>
+
+                        <button class="boton-pasar-tres" onclick="PasarAoK()">
+                            <img src="./img/boton.png">
+                        </button>
+                    </div>
+                    <img id="cont-tres-uno" src="./img/cont-tres-uno.png">
+                </div>
+                <div class="display-none" id="contenedor-dos">
+                    <img id="cont-tres-dos" src="./img/cont-tres-dos.png">
+                    <div class="contenidos-dos">
+                        <div class="texto-icono">
+                            <img src="./img/iconos-tres/5-ok.png">
+                            <p>Existen 3 sistemas de <br> recomendación principales</p>
+                        </div>
+
+                        <button class="boton-ok" onclick="pasarsegundaCarpeta()">
+                            <img src="./img/boton-ok.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./img/fondo-vaporwave.png">
+    </div>
+
+    <div class="display-none" id="carpeta-dos">
+        <button onclick="OcultarSegundaInfo()" id="boton-cerrar-carpeta-dos">
+        </button> <!--display-none-->
+        <div class="fondo-segunda-carpeta">
+            <img src="./img/fondo-segunda-carpeta.png">
+        </div>
+        <div class="contenedor-carp-dos" id="contenedor-carp-dos"> <!--contenedor-carp-dos-->
+            <img src="./img/carpeta-dos/color-uno.png">
+            <img src="./img/carpeta-dos/color-dos.png">
+            <img src="./img/carpeta-dos/color-tres.png">
+
+            <div class="configuracion-contenido">
+
+                <div class="contenido-uno-carp-dos">
+                    <h3>Sistemas de recomendacion basados en contenido</h3>
+                    <img src="./img/carpeta-dos/rectangulo-uno.png">
+                    <img id="rectangulo-uno" src="./img/carpeta-dos/rectangulo-uno-complemento.png">
+                    <p>Encuentra similitudes entre productos relacionados que busca el usuario</p>
+                    <div class="flecha-uno">
+                        <img src="./img/carpeta-dos/flecha.png">
+                    </div>
+                </div>
+
+                <div class="contenido-dos-carp-dos">
+                    <h3>Sistemas de recomendacion basados en interaccion o colaborativo</h3>
+                    <img src="./img/carpeta-dos/rectangulo-dos.png">
+                    <img id="rectangulo-dos" src="./img/carpeta-dos/rectangulo-dos-complemento.png">
+                    <p>Encuentra similitudes entre productos relacionados que busca el usuario</p>
+                    <div class="flecha-dos">
+                        <img src="./img/carpeta-dos/flecha.png">
+                    </div>
+                </div>
+
+                <div class="contenido-tres-carp-dos">
+                    <h3>Sistema de recomendacion hibridos</h3>
+                    <img src="./img/carpeta-dos/rectangulo-tres.png">
+                    <img id="rectangulo-tres" src="./img/carpeta-dos/rectangulo-tres-complemento.png">
+                    <p>Encuentra similitudes entre productos relacionados que busca el usuario</p>
+                    <div class="flecha-tres">
+                        <img src="./img/carpeta-dos/flecha.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="flechas">
+            <button class="flecha-pasar-carpeta" onclick="pasarNoticiaTres()">
+                <img src="./img/carpeta-dos/flecha.png">
+            </button>
+            <button class="flecha-pasar-carpeta-dos" onclick="volverNoticiaDos()">
+                <img src="./img/carpeta-dos/flecha.png">
+            </button>
+        </div>
+    </div>
+
+    <div class="display-none" id="carpeta-tres"> <!--display none-->
+        <button onclick="OcultarTerceraInfo()" id="boton-cerrar-carpeta-tres">
+        </button>
+        <div class="fondo-tercera-carpeta">
+            <img src="./img/carpeta-tres/fondo-carpeta-tres.png">
+        </div>
+        <div class="display-none" id="iconos-carpeta-tres">
+            <img src="./img/carpeta-tres/app-1.png">
+            <button class="botones-aplicaciones" onclick="mostrarYoutube()">
+                <span id="texto-iconos">Youtube</span>
+            </button>
+            <img src="./img/carpeta-tres/app-2.png">
+            <button class="botones-aplicaciones" onclick="mostrarNetflix()">
+                <span id="texto-iconos">Netflix</span>
+            </button>
+            <img src="./img/carpeta-tres/app-3.png">
+            <button class="botones-aplicaciones" onclick="mostrarSpotify()">
+                <span id="texto-iconos">Spotify</span>
+            </button>
+            <img src="./img/carpeta-tres/app-4.png">
+            <button class="botones-aplicaciones" onclick="mostrarX()">
+                <span id="texto-iconos">X</span>
+            </button>
+            <img src="./img/carpeta-tres/app-5.png">
+            <button class="botones-aplicaciones" onclick="mostrarPinterest()">
+                <span id="texto-iconos">Pinterest</span>
+            </button>
+        </div>
+
+
+        <div class="cartel-pregunta" id="cartel-pregunta">
+            <div class="cartel">
+                <img src="./img/carpeta-tres/cartel-carpeta-tres.png">
+            </div>
+            <div class="texto-icono-carpeta-tres">
+                <img src="./img/carpeta-tres/icono.png">
+                <p>¿Cómo usan las apps los <br> sistemas de recomendacion?</p>
+            </div>
+            <div class="botones-carpeta-tres">
+                <button><img src="./img/carpeta-tres/quiero-saber.png" onclick="mostrarIconos()"></button>
+                <button><img src="./img/carpeta-tres/no-importa.png" onclick="mostrarMono()"></button>
+            </div>
+        </div>
+
+        <div class="display-none" id="mono-carp-tres">
+            <img id="mono-molesto" src="./img/carpeta-tres/mono-molesto.png">
+            <div class="contenido-mono">
+                <p>Te queda información útil</p>
+                <img id="flecha-mono" src="./img/carpeta-dos/flecha.png" onclick="mostrarIconos()">
+            </div>
+        </div>
+
+        <div class="contenido-carp-tres">
+
+            <!--NETFLIX-->
+
+            <div class="display-none" id="netflix">
+                <img src="./img/carpeta-tres/Contenido-carpetas-dos/cont-netflix.png">
+                <div class="contenido-netflix">
+                    <img id="foto-referencia-netflix" src="./img/carpeta-tres/Contenido-carpetas-dos/foto-netflix.png">
+
+                    <div class="explicacion-netflix">
+                        <p>Se basa en:</p>
+
+                        <div class="explicacion-net-1">
+                            <img src="./img/carpeta-tres/Contenido-carpetas-dos/texto-1.png">
+                            <img id="animacion-netflix-uno"
+                                src="./img/carpeta-tres/Contenido-carpetas-dos/animacion-uno.png">
+                        </div>
+
+                        <div class="explicacion-net-2">
+                            <img src="./img/carpeta-tres/Contenido-carpetas-dos/texto-2.png">
+                            <img id="animacion-netflix-dos"
+                                src="./img/carpeta-tres/Contenido-carpetas-dos/animacion-dos.png">
+                        </div>
+
+                        <p>Crea:</p>
+
+                        <div class="explicacion-net-3">
+                            <img src="./img/carpeta-tres/Contenido-carpetas-dos/texto-3.png">
+                            <img id="animacion-netflix-tres"
+                                src="./img/carpeta-tres/Contenido-carpetas-dos/animacion-tres.png">
+                        </div>
+
+                        <div class="explicacion-net-4">
+                            <img src="./img/carpeta-tres/Contenido-carpetas-dos/texto-4.png">
+                            <img id="animacion-netflix-cuatro"
+                                src="./img/carpeta-tres/Contenido-carpetas-dos/animacion-cuatro.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--YOUTUBE-->
+
+            <div class="display-none" id="youtube">
+                <img src="./img/carpeta-tres/Contenido-carpetas-uno/cont-youtube.png">
+                <div class="contenido-youtube">
+                    <img id="foto-referencia-youtube" src="./img/carpeta-tres/Contenido-carpetas-uno/foto-youtube.png">
+
+                    <div class="explicacion-youtube">
+                        <p>Toma en cuenta las interacciones:</p>
+
+                        <div class="explicacion-you-1">
+                            <img src="./img/carpeta-tres/Contenido-carpetas-uno/texto-1.png">
+                            <img id="animacion-youtube-uno"
+                                src="./img/carpeta-tres/Contenido-carpetas-uno/animacion-uno.png">
+                        </div>
+
+                        <div class="explicacion-you-2">
+                            <img src="./img/carpeta-tres/Contenido-carpetas-uno/texto-2.png">
+                            <img id="animacion-youtube-dos"
+                                src="./img/carpeta-tres/Contenido-carpetas-uno/animacion-dos.png">
+                        </div>
+
+                        <div class="explicacion-you-3">
+                            <img src="./img/carpeta-tres/Contenido-carpetas-uno/texto-3.png">
+                            <img id="animacion-youtube-tres"
+                                src="./img/carpeta-tres/Contenido-carpetas-uno/animacion-tres.png">
+                        </div>
+
+                        <div class="explicacion-you-4">
+                            <img src="./img/carpeta-tres/Contenido-carpetas-uno/texto-4.png">
+                            <img id="animacion-youtube-cuatro"
+                                src="./img/carpeta-tres/Contenido-carpetas-uno/animacion-cuatro.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--PINTEREST-->
+
+            <div class="display-none" id="pinterest">
+                <img src="./img/carpeta-tres/Contenido-carpetas-tres/contenedor.png">
+                <div class="contenido-pinterest">
+                    <img id="foto-referencia-pinterest"
+                        src="./img/carpeta-tres/Contenido-carpetas-tres/foto-referencia.png">
+
+                    <div class="explicacion-pinterest">
+                        <p>Toma en cuenta las interacciones:</p>
+
+                        <div class="explicacion-pin-1">
+                            <img src="./img/carpeta-tres/Contenido-carpetas-tres/texto-1.png">
+                            <img id="animacion-pinterest-uno"
+                                src="./img/carpeta-tres/Contenido-carpetas-tres/animacion-uno.png">
+                        </div>
+
+                        <div class="explicacion-pin-2">
+                            <img src="./img/carpeta-tres/Contenido-carpetas-tres/texto-2.png">
+                            <img id="animacion-pinterest-dos"
+                                src="./img/carpeta-tres/Contenido-carpetas-tres/animacion-dos.png">
+                        </div>
+
+                        <p>Crea:</p>
+
+                        <div class="explicacion-pin-3">
+                            <img src="./img/carpeta-tres/Contenido-carpetas-tres/texto-3.png">
+                            <img id="animacion-pinterest-tres"
+                                src="./img/carpeta-tres/Contenido-carpetas-tres/animacion-tres.png">
+                        </div>
+
+                        <div class="explicacion-pin-4">
+                            <img src="./img/carpeta-tres/Contenido-carpetas-tres/texto-4.png">
+                            <img id="animacion-pinterest-cuatro"
+                                src="./img/carpeta-tres/Contenido-carpetas-tres/animacion-cuatro.png">
+                        </div>
+
+                        <div class="explicacion-pin-5">
+                            <img src="./img/carpeta-tres/Contenido-carpetas-tres/texto-5.png">
+                            <img id="animacion-pinterest-cinco"
+                                src="./img/carpeta-tres/Contenido-carpetas-tres/animacion-cinco.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--SPOTIFY-->
+
+            <div class="display-none" id="spotify">
+                <img src="./img/carpeta-tres/Contenido-carpetas-cuatro/contenedor.png">
+                <div class="contenido-spotify">
+                    <img id="foto-referencia-spotify"
+                        src="./img/carpeta-tres/Contenido-carpetas-cuatro/foto-referencia.png">
+
+                    <div class="explicacion-spotify">
+                        <p>Toma en cuenta las interacciones:</p>
+
+                        <div class="explicacion-spo-1">
+                            <img src="./img/carpeta-tres/Contenido-carpetas-cuatro/texto-1.png">
+                            <img id="animacion-spotify-uno"
+                                src="./img/carpeta-tres/Contenido-carpetas-cuatro/animacion-uno.png">
+                        </div>
+
+                        <div class="explicacion-spo-2">
+                            <img src="./img/carpeta-tres/Contenido-carpetas-cuatro/texto-2.png">
+                            <img id="animacion-spotify-dos"
+                                src="./img/carpeta-tres/Contenido-carpetas-cuatro/animacion-dos.png">
+                        </div>
+
+                        <p>Crea:</p>
+
+                        <div class="explicacion-spo-3">
+                            <img src="./img/carpeta-tres/Contenido-carpetas-cuatro/texto-3.png">
+                            <img id="animacion-spotify-tres"
+                                src="./img/carpeta-tres/Contenido-carpetas-cuatro/animacion-tres.png">
+                        </div>
+
+                        <div class="explicacion-spo-4">
+                            <img src="./img/carpeta-tres/Contenido-carpetas-cuatro/texto-4.png">
+                            <img id="animacion-spotify-cuatro"
+                                src="./img/carpeta-tres/Contenido-carpetas-cuatro/animacion-cuatro.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--X-->
+
+            <div class="display-none" id="x">
+                <img src="./img/carpeta-tres/Contenido-carpetas-cinco/contenedor.png">
+                <div class="contenido-x">
+                    <img id="foto-referencia-x" src="./img/carpeta-tres/Contenido-carpetas-cinco/foto-referencia.png">
+
+                    <div class="explicacion-x">
+                        <p>Filtrado de tres etapas:</p>
+
+                        <div class="explicacion-x-1">
+                            <img src="./img/carpeta-tres/Contenido-carpetas-cinco/texto-1.png">
+                            <img id="animacion-x-uno"
+                                src="./img/carpeta-tres/Contenido-carpetas-cinco/animacion-uno.png">
+                        </div>
+
+                        <div class="explicacion-x-2">
+                            <img src="./img/carpeta-tres/Contenido-carpetas-cinco/texto-2.png">
+                            <img id="animacion-x-dos"
+                                src="./img/carpeta-tres/Contenido-carpetas-cinco/animacion-dos.png">
+                        </div>
+
+                        <div class="explicacion-x-3">
+                            <img src="./img/carpeta-tres/Contenido-carpetas-cinco/texto-3.png">
+                            <img id="animacion-x-tres"
+                                src="./img/carpeta-tres/Contenido-carpetas-cinco/animacion-tres.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="display-none" onclick="pasarNoticiaCuatro()" id="flechas-pasar-carpeta-cuatro">
+                <img src="./img/carpeta-dos/flecha.png">
+            </button>
+
+        </div>
+    </div>
+    <div class="display-none" id="carpeta-cuatro"> <!--display none-->
+        <button onclick="OcultarCuartaInfo()" id="boton-cerrar-carpeta-cuatro"></button>
+
+        <div class="fondo-cuarta-carpeta">
+            <img src="./img/carpeta-cuatro/fonto-carpeta-cuatro.png">
+        </div>
+
+        <div class="contenido-carpeta-cuatro" id="contenido-carpeta-cuatro">
+            <div class="fondo-carpetas">
+                <img id="cartel-uno" src="./img/carpeta-cuatro/cartel-uno.png">
+                <img id="cartel-dos" src="./img/carpeta-cuatro/cartel-dos.png">
+            </div>
+
+            <div class="contenidos-presentacion-uno">
+                <p id="parrafo-cuatro">Estos sistemas actúan como un asistente personal que estimula a la persona a
+                    seguir descubriendo elementos.</p>
+                <div class="imagenes-cuatro">
+                    <img id="robot-mina" src="./img/carpeta-cuatro/uno.png">
+                    <img id="animacion-fondo" src="./img/carpeta-cuatro/animacion-carpeta.gif">
+                </div>
+            </div>
+
+            <div class="contenidos-presentacion-dos">
+                <div class="contenido-cuatro">
+                    <img src="./img/carpeta-cuatro/1.png">
+                    <p>Se lograría que el usuario ahorre tiempo</p>
+                </div>
+
+                <div class="contenido-cuatro">
+                    <img src="./img/carpeta-cuatro/2.png">
+                    <p>Se establecería una relación personalizada porque no habrían memoria de los gustos </p>
+                </div>
+
+                <div class="contenido-cuatro">
+                    <img src="./img/carpeta-cuatro/3.png">
+                    <p>No se generaría una participación para interactuar y recomendaciones</p>
+                </div>
+
+                <img id="boton-cuatro" src="./img/boton.png" onclick="pasarSegundaParte()">
+            </div>
+        </div>
+
+        <div class="display-none" id="contenido-carpeta-cuatro-dos">
+            <div class="contenidos-cuatro-dos">
+                <img id="mensaje-carpeta-cuatro" src="./img/carpeta-cuatro/mensaje.png">
+                <img id="grafico" src="./img/carpeta-cuatro/grafico.png">
+            </div>
+
+            <div class="iconos-graficos">
+                <img src="./img/carpeta-cuatro/youtube.png" id="icon-youtube"
+                    data-selected="./img/carpeta-cuatro/youtube-seleccionado.png">
+                <img src="./img/carpeta-cuatro/netflix.png" id="icon-netflix"
+                    data-selected="./img/carpeta-cuatro/netflix-seleccionado.png">
+                <img src="./img/carpeta-cuatro/spotify.png" id="icon-spotify"
+                    data-selected="./img/carpeta-cuatro/spotify-seleccionado.png">
+                <img src="./img/carpeta-cuatro/x.png" id="icon-x"
+                    data-selected="./img/carpeta-cuatro/x-seleccionado.png" onclick="mostrarMensajeX()">
+                <img src="./img/carpeta-cuatro/pinterest.png" id="icon-pinterest"
+                    data-selected="./img/carpeta-cuatro/pinterest-seleccionado.png">
+            </div>
+            <div class="graficos-apps">
+                <div id="grafico-youtube" class="grafico">
+                    <img src="./img/carpeta-cuatro/grafico-uno.png">
+                </div>
+
+                <div id="grafico-netflix" class="grafico">
+                    <img src="./img/carpeta-cuatro/grafico-dos.png">
+                </div>
+
+                <div id="grafico-spotify" class="grafico">
+                    <img src="./img/carpeta-cuatro/grafico-tres.png">
+                </div>
+                <div id="grafico-pinterest" class="grafico">
+                    <img src="./img/carpeta-cuatro/grafico-cuatro.png">
+                </div>
+            </div>
+
+            <div class="display-none" id="cartel-x">
+                <img src="./img/carpeta-cuatro/mensaje-x.png">
+                <div class="mensaje-x-contenido">
+                    <img src="./img/carpeta-cuatro/icono-x.png">
+                    <p>X (Twitter) No cuenta con estudios públicos sobre sus sistemas de recomendación</p>
+                    <img id="boton-ok-x" src="./img/carpeta-cuatro/boton-ok.png" onclick="ocultarMensajeX()">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
